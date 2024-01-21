@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{ $css := resources.Get "css/index.css" | fingerprint "md5" }}
+  <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
+  
+  <style>
+    #sidebar {
+      transition: width 0.3s ease-in-out;
+    }
+    #sidebarContent {
+      transition: opacity 0.3s ease-in-out;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-custom-beige">
+  <!-- Header or other shared code -->
+
+  {{ block "main" . }}
+  <!-- The part of the page that begins to differ between templates -->
+  {{ end }}
+
+  {{ block "footer" . }}
+  <!-- Footer or other shared code -->
+  {{ end }}
+</body>
+</html>

@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="flex h-screen">
+  
+  <!-- Sidebar -->
+  <div id="sidebar" class="relative sidebar-transition lg:block bg-gray-100 h-full overflow-hidden font-mono" style="width: 250px; background-color: rgb(190, 176, 143);">
+      <!-- Toggle Button -->
+    <button id="sidebarToggle" class="absolute top-0 right-0 mt-4 mr-[10px] text-xl text-xl font-semibold text-gray-700 bg-transparent hover:bg-gray-200 p-2 rounded-full">
+      Info
+    </button>
+
+    <div class="px-6 py-4">
+      <!-- Sidebar Content -->
+      <div id="sidebarContent" class="mt-4">
+        <!-- Sidebar links -->
+        <a href="https://www.palazzopecci.it/" class="block py-2 text-black hover:bg-gray-200 rounded-full">Location</a>
+        <a href="https://en.wikipedia.org/wiki/Benevento" class="block py-2 text-black hover:bg-gray-200 rounded">Benevento</a>
+        <a href="https://googlethatforyou.com?q=how%20to%20reach%20benevento%20from%20where%20I%20am%20now" class="block py-2 text-black hover:bg-gray-200 rounded">Come arrivare</a>
+        <!-- Add more links as needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <!--     
+    max-h-[90vh] limits the image height to 90% of the viewport height. 
+    Adjust the value 90vh to account for any other elements like headers or footers. 
+    For example, if you have a header that's 10vh high, using 90vh for the image ensures the total content does not exceed 100vh, 
+    which is the total height of the viewport.
+    object-contain ensures that the entire image is scaled to fit within its container, maintaining its aspect ratio without cropping. 
+  -->
+  <main class="relative w-full flex flex-col"> <!-- Removed 'max-h-screen' to allow for natural content flow -->
+    <!-- Image -->
+    <div class="w-full">
+      <!-- Using 'vh' units to ensure the image height is within the viewport -->
+      <img class="w-full h-auto max-h-[90vh] object-contain" src="/images/pic1.png" alt="Descriptive Alt Text"> 
+    </div>
+  </main>
+
+</div>
+
+<!-- Include the external JavaScript file -->
+<script src="/js/sidebarToggle.js"></script>
+
+{{ end }}
