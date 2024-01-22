@@ -6,7 +6,7 @@ function toggleSidebar() {
     if (sidebar.style.width === '50px' || !sidebar.style.width) {
         sidebar.style.width = '250px';
         sidebarContent.style.display = 'block'; // Show content
-        toggleButton.textContent = '<'; // Set text to '<' when expanded
+        toggleButton.textContent = 'Info'; // Set text to 'Info' when expanded
     } else {
         sidebar.style.width = '50px';
         sidebarContent.style.display = 'none'; // Hide content
