@@ -1,0 +1,86 @@
+body {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+#sidebar {
+  font-family: "Playpen Sans", cursive !important;
+  transition: width 0.3s ease-in-out;
+  /* position: absolute; */
+  /* top: 10px; /*Adjust this for vertical alignment */
+  /* left: 10px; /*Adjust this to align with the sidebar content */
+}
+#sidebarContent {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  margin-top: 60px; /* Adjust this value to make space for the 'Info' button */
+  font-size: 1.4em;
+}
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/background_img.png'); /* Use the correct relative path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+.text-container {
+  width: 50%;
+  height: 90%; /* Full height of the parent container */
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px; /* Adjust as needed */
+  padding-left: 80px; /* Adjust as needed */
+  overflow: auto; /* In case the content overflows */
+}
+.text-header {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Example bottom border */
+  position: sticky;
+  top: 0; /* Stick to the top of the text-container */
+  z-index: 10;
+  font-size: 24px; /* Example font size, adjust as needed */
+  font-weight: bold; /* Makes the text bold */
+  background-color: rgb(189, 175, 143);
+  text-align: center;
+}
+.image-container {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  max-width: 90%; /* Ensure the image does not exceed the container width */
+  height: auto;
+  max-height: 90vh; /* Adjust the height as needed */
+  object-fit: contain; /* This will ensure the aspect ratio is maintained */
+}
+.text-section {
+  /* Style for text sections */
+  margin-bottom: 20px; /* Space after each section */
+  margin-top: 20px;
+  text-align: center;
+}
+hr {
+  border: 0; /* Remove default border */
+  height: 1px; /* Horizontal line thickness */
+  background-color: #ccc; /* Horizontal line color */
+  margin-top: 20px; /* Space above the line, adjust as needed */
+  margin-bottom: 20px; /* Space below the line, adjust as needed */
+}
+.animated-header {
+  font-size: 1.5em;
+  font-weight: bold; /* Makes the text bold */
+  color: #333;
+  margin-top: 20px;
+}
+.animated-paragraph {
+  opacity: 0;
+}

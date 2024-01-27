@@ -6,20 +6,11 @@
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   {{ $css := resources.Get "css/index.css" | fingerprint "md5" }}
   <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
-  
-  <style>
-    #sidebar {
-      transition: width 0.3s ease-in-out;
-      /* position: absolute; */
-      /* top: 10px; /*Adjust this for vertical alignment */
-      /* left: 10px; /*Adjust this to align with the sidebar content */
-    }
-    #sidebarContent {
-      transition: opacity 0.3s ease-in-out;
-      opacity: 1;
-      margin-top: 60px; /* Adjust this value to make space for the 'Info' button */
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body class="bg-custom-beige">
   <!-- Header or other shared code -->
