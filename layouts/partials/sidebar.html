@@ -1,0 +1,57 @@
+<!-- Sidebar -->
+<div
+  id="sidebar"
+  class="relative sidebar-transition lg:block bg-gray-100 h-full overflow-hidden font-mono"
+>
+  <!-- Info Button -->
+  <button
+    id="sidebarToggle"
+    class="sidebar-toggle absolute mt-4 text-xl hover:bg-gray-200 rounded-full"
+  >
+    &#171;
+  </button>
+
+  <div class="px-6 py-8">
+    <!-- Sidebar Content -->
+    <div id="sidebarContent" class="mt-4">
+      <!-- Sidebar links -->
+      <a
+        href="/index.html"
+        class="sidebar-link text-black hover:bg-gray-200 rounded-full"
+        >Home</a
+      >
+      <a
+        href="https://www.palazzopecci.it/"
+        class="sidebar-link text-black hover:bg-gray-200 rounded-full"
+        >Location</a
+      >
+      <a
+        href="{{ "/benevento/" | relLangURL }}"
+        class="sidebar-link text-black hover:bg-gray-200 rounded-full"
+        >Benevento</a
+      >
+      <a
+      href="{{ "/travel/" | relLangURL }}"
+        class="sidebar-link text-black hover:bg-gray-200 rounded-full"
+        >Travel</a
+      >
+      <a
+      href="{{ "/qa/" | relLangURL }}"
+        class="sidebar-link text-black hover:bg-gray-200 rounded-full"
+        >Q + A</a
+      >
+    </div>
+    
+    <div class="language-switcher-container">
+      <nav>
+        {{ range .Site.Languages }}
+          <a href="{{ printf "/%s/" .Lang }}" title="{{ .LanguageName }}">
+            {{ if eq .Lang "en" }}🇬🇧{{ else if eq .Lang "it" }}🇮🇹{{ end }}
+          </a>
+        {{ end }}
+      </nav>
+    </div>
+    
+  </div>
+
+</div>
