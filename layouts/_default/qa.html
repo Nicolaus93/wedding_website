@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div class="flex h-screen">
+  {{ partial "sidebar.html" . }}
+  <!-- Main content for Q + A -->
+  <main class="main-container">
+    
+    <h1 class="animated-header"> What is the dress code?</h1> 
+    <div class="animated-paragraph">
+      We're aiming for a semi-formal vibe. Picture dresses, jumpsuits, button-downs, and slacks.
+    </div>
+
+    <h1 class="animated-header"> Will the ceremony/reception be indoors or outdoors? </h1> 
+    <div class="animated-paragraph">
+      Our ceremony and aperitivo will be outdoors (weather permitting!), followed by an indoor reception.
+    </div>
+
+    <h1 class="animated-header"> How do I RSVP? </h1> 
+    <div class="animated-paragraph">
+      You will be receiving an e-mail with all the details about how to RSVP. Be on the lookout!
+    </div> 
+
+    <h1 class="animated-header"> What should I do if I cannot make it? </h1>
+    <div class="animated-paragraph">
+      In case you cannot make it please let us know as soon as possible.
+    </div>
+
+    <h1 class="animated-header"> Can I bring a plus one? </h1>
+    <div class="animated-paragraph">
+      If you would like to bring a plus one please reach out to us.
+    </div>
+
+    <h1 class="animated-header"> Are kids welcome? </h1>
+    <div class="animated-paragraph">
+      Little ones are welcome to join our celebrations.
+    </div>
+
+    <h1 class="animated-header"> What if I have dietary restrictions? </h1>
+    <div class="animated-paragraph">
+      Please write your dietary restrictions on the RSVP form that you will receive by e-mail. Feel free to also reach out to the groom and the bride.      
+    </div>
+
+    <h1 class="animated-header"> What's the best way to get in touch with you if I have more questions? </h1>
+    <div class="animated-paragraph", style="margin-bottom: 10%;">
+      You most probably have our contact so feel free to reach out. If not, please contact us through the contact form and we can happily share the phone numbers.
+    </div>
+
+  </main>
+</div>
+
+<!-- Include any necessary scripts -->
+<script src="/js/sidebarToggle.js"></script>
+{{ end }}

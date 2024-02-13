@@ -1,0 +1,64 @@
+{{ define "main" }}
+<div class="flex h-screen">
+  {{ partial "sidebar.html" . }}
+  <main class="main-container">
+    
+    <div class="animated-paragraph" style="margin-top: 5%;">
+        Siamo davvero felici che parteciperai alla nostra celebrazione di matrimonio. 
+        Oltre alla festa, speriamo che tu possa prenderti del tempo per esplorare tutto ciò che Benevento e i dintorni hanno da offrire!
+    </div>
+    <h1 class="animated-header"> Cose da Vedere a Benevento </h1> 
+    <div class="animated-paragraph" style="margin-top: 5%;"> 
+        <a href="https://it.wikipedia.org/wiki/Arco_di_Traiano_(Benevento)" style="color: darkred;">Arco di Traiano</a> -
+        Questo magnifico arco trionfale romano fu costruito nel 114 d.C. ed è uno degli esempi meglio conservati del suo genere.
+        <img src="/images/arco.jpg" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+    </div>
+    <div class="animated-paragraph"> 
+        <a href="https://it.wikipedia.org/wiki/Chiesa_di_Santa_Sofia_(Benevento)" style="color: darkred;">Chiesa di Santa Sofia</a> -
+        Sito Patrimonio dell'Umanità dell'UNESCO, questa straordinaria chiesa risale all'VIII secolo e vanta un unico piano a forma di stella e affreschi notevoli.
+        <img src="/images/santa_sofia.jpg" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+    </div>
+    <div class="animated-paragraph">
+        <a href="https://it.wikipedia.org/wiki/Teatro_romano_di_Benevento" style="color: darkred;">Teatro Romano</a> -
+        Esplora le rovine di questo antico teatro romano, testimonianza della ricca storia di Benevento.
+        <img src="/images/teatro_romano.jpg" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+    </div>
+    <div class="animated-paragraph">
+        <a href="https://it.wikipedia.org/wiki/Duomo_di_Benevento" style="color: darkred;">Duomo</a> -
+        Una bellissima cattedrale con una storia affascinante, con parti della struttura risalenti al XIII secolo.
+        <img src="/images/duomo.jpg" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+    </div>
+    <div class="animated-paragraph">
+        <strong>Fai una Passeggiata e Goditi il Cibo -</strong> 
+        Benevento ha strade affascinanti con bei ristoranti e caffè. Assicurati di provare alcune delle specialità locali!
+    </div>
+
+    <h1 class="animated-header">Gite di un Giorno da Benevento</h1>
+
+    <div class="animated-paragraph" style="margin-top: 5%;"> 
+        <a href="https://it.wikipedia.org/wiki/Napoli" style="color: darkred;">Napoli</a> -
+        A poco più di un'ora di distanza, Napoli è una città vivace, ricca di storia, arte e pizza! Esplora il centro storico, visita musei di livello mondiale e cammina lungo il lungomare scenografico.
+        <img src="/images/napoli.jpg" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+    </div>
+    <div class="animated-paragraph">
+        <a href="https://it.wikipedia.org/wiki/Pompei" style="color: darkred;">Pompei</a> -
+        Fai un salto indietro nel tempo con una visita alle rovine incredibilmente conservate di Pompei, un'antica città romana sepolta dall'eruzione del Monte Vesuvio nel 79 d.C.
+        <img src="/images/pompei.jpg" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+    </div>
+    <div class="animated-paragraph">
+        <a href="https://it.wikipedia.org/wiki/Capri" style="color: darkred;">Capri</a> -
+        Fuggi sull'idilliaca isola di Capri con la sua Grotta Azzurra, ville di lusso e viste mozzafiato sulla costa.
+        <img src="/images/capri.jpg" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+    </div>
+    <div class="animated-paragraph">
+        <a href="https://it.wikipedia.org/wiki/Costiera_Amalfitana" style="color: darkred;">Costiera Amalfitana</a> -
+        Esplora la bellezza della Costiera Amalfitana, con le sue scogliere drammatiche, paesini pittoreschi come Positano e Amalfi, e paesaggi costieri mozzafiato.
+        <img src="/images/amalfi_coast.jpg" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+    </div>
+
+  </main>
+</div>
+
+<!-- Includere gli script necessari -->
+<script src="/js/sidebarToggle.js"></script>
+{{ end }}

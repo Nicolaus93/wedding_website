@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="flex h-screen">
+  {{ partial "sidebar.html" . }}
+  <!-- Main content for Q + A -->
+  <main class="main-container">
+    
+    <h1 class="animated-header"> From Rome Fiumicino &#9992;</h1> 
+    <div class="animated-paragraph">
+        From the airport, get the <a href="https://leonardo-express.com/en/en-leonardo-express-tickets/" style="color: darkred;">Leonardo Express</a> to Rome Termini. 
+        From there, you can come to Benevento by train either with 
+        <a href="https://www.trenitalia.com/" style="color: darkred;">Trenitalia</a> 
+        or <a href="https://www.italotreno.it/" style="color: darkred;">Italo</a>.
+    </div>
+
+    <h1 class="animated-header", style="margin-top: 5%;">From Naples Capodichino &#9992;</h1>
+    <div class="animated-paragraph">
+        The best way to reach Benevento from the Naples airport is probably by car. If you can't rent a car, get in touch with us.
+    </div>
+
+    <h1 class="animated-header", style="margin-top: 5%;">From Bari Karol Wojtyła &#9992;</h1>
+    <div class="animated-paragraph">
+        From the airport, get the <a href="https://www.airport-bari.com/train.php" style="color: darkred;">train</a> to Bari Centrale. From there, again 
+        you can reach Benevento by train either with 
+        <a href="https://www.trenitalia.com/" style="color: darkred;">Trenitalia</a> 
+        or <a href="https://www.italotreno.it/" style="color: darkred;">Italo</a>.
+    </div>
+
+
+    <h1 class="animated-header", style="margin-top: 5%;">By train 🚂</h1>
+    <div class="animated-paragraph">
+        Trains in Italy are pretty convenient and fortunately Benevento is well connected. Take a look at 
+        <a href="https://www.trenitalia.com/" style="color: darkred;">Trenitalia</a> 
+        or <a href="https://www.italotreno.it/" style="color: darkred;">Italo</a>.
+    </div>
+
+    <h1 class="animated-header", style="margin-top: 5%;">By car &#x1F697;</h1>
+    <div class="animated-paragraph", style="margin-bottom: 10%;">
+        That should be <a href="https://googlethatforyou.com?q=go%20to%20benevento%20by%20car" style="color: darkred;">easy</a>!
+    </div>
+
+  </main>
+</div>
+
+<!-- Include any necessary scripts -->
+<script src="/js/sidebarToggle.js"></script>
+{{ end }}

@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div class="flex h-screen">
+  {{ partial "sidebar.html" . }}
+  <!-- Contenuto principale per Domande e Risposte -->
+  <main class="main-container">
+    
+    <h1 class="animated-header"> Qual è il dress code? </h1> 
+    <div class="animated-paragraph">
+      Puntiamo su un'atmosfera semi-formale.
+    </div>
+
+    <h1 class="animated-header"> La cerimonia/il ricevimento sarà al chiuso o all'aperto? </h1> 
+    <div class="animated-paragraph">
+      La nostra cerimonia e l'aperitivo si terranno all'aperto (se il tempo lo permette!), seguiti da un ricevimento al chiuso.
+    </div>
+
+    <h1 class="animated-header"> Come posso confermare la mia presenza? </h1> 
+    <div class="animated-paragraph">
+      Riceverete un'e-mail con tutti i dettagli su come confermare la vostra presenza. State all'erta!
+    </div> 
+
+    <h1 class="animated-header"> Cosa dovrei fare se non posso partecipare? </h1>
+    <div class="animated-paragraph">
+      Nel caso in cui non possiate partecipare, vi preghiamo di farcelo sapere il prima possibile.
+    </div>
+
+    <h1 class="animated-header"> Posso portare un accompagnatore? </h1>
+    <div class="animated-paragraph">
+      Se desiderate portare un accompagnatore, vi preghiamo di contattarci.
+    </div>
+
+    <h1 class="animated-header"> I bambini sono benvenuti? </h1>
+    <div class="animated-paragraph">
+      I più piccoli sono benvenuti a partecipare ai nostri festeggiamenti.
+    </div>
+
+    <h1 class="animated-header"> E se avessi restrizioni alimentari? </h1>
+    <div class="animated-paragraph">
+      Si prega di scrivere le vostre restrizioni alimentari sul modulo di conferma presenza che riceverete via e-mail. Sentitevi liberi di contattare anche lo sposo e la sposa.
+    </div>
+
+    <h1 class="animated-header"> Qual è il modo migliore per contattarvi se ho altre domande? </h1>
+    <div class="animated-paragraph", style="margin-bottom: 10%;">
+      Molto probabilmente avete i nostri contatti quindi non esitate a raggiungerci. In caso contrario, contattateci tramite il modulo di contatto e saremo felici di condividere i numeri di telefono.
+    </div>
+
+  </main>
+</div>
+
+<!-- Includere gli script necessari -->
+<script src="/js/sidebarToggle.js"></script>
+{{ end }}

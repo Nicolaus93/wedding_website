@@ -8,19 +8,18 @@
   <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   <!-- Link to CSS file -->
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body class="bg-custom-beige">
   <!-- Header or other shared code -->
 
-  {{ block "main" . }}
-  <!-- The part of the page that begins to differ between templates -->
-  {{ end }}
+  {{ block "main" . }}{{ end }}
+  <!-- The main content block is overridden in child templates -->
 
-  {{ block "footer" . }}
-  <!-- Footer or other shared code -->
-  {{ end }}
+  <!-- Directly include the footer partial without a block -->
+  <!-- {{ partial "footer.html" . }} -->
 </body>
 </html>

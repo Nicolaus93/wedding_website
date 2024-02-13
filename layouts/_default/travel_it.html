@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div class="flex h-screen">
+  {{ partial "sidebar.html" . }}
+  <!-- Contenuto principale per Domande e Risposte -->
+  <main class="main-container">
+    
+    <h1 class="animated-header"> Da Roma Fiumicino ✈️</h1> 
+    <div class="animated-paragraph">
+        Dall'aeroporto, prendi il <a href="https://leonardo-express.com/en/en-leonardo-express-tickets/" style="color: darkred;">Leonardo Express</a> per Roma Termini. 
+        Da lì, puoi raggiungere Benevento in treno sia con 
+        <a href="https://www.trenitalia.com/" style="color: darkred;">Trenitalia</a> 
+        che con <a href="https://www.italotreno.it/" style="color: darkred;">Italo</a>.
+    </div>
+
+    <h1 class="animated-header" style="margin-top: 5%;">Da Napoli Capodichino ✈️</h1>
+    <div class="animated-paragraph">
+        Il modo migliore per raggiungere Benevento dall'aeroporto di Napoli è probabilmente in auto. Se non puoi noleggiare un'auto, mettiti in contatto con noi.
+    </div>
+
+    <h1 class="animated-header" style="margin-top: 5%;">Da Bari Karol Wojtyła ✈️</h1>
+    <div class="animated-paragraph">
+        Dall'aeroporto, prendi il <a href="https://www.airport-bari.com/train.php" style="color: darkred;">treno</a> per Bari Centrale. Da lì, di nuovo 
+        puoi raggiungere Benevento in treno sia con 
+        <a href="https://www.trenitalia.com/" style="color: darkred;">Trenitalia</a> 
+        che con <a href="https://www.italotreno.it/" style="color: darkred;">Italo</a>.
+    </div>
+
+    <h1 class="animated-header" style="margin-top: 5%;">In treno 🚂</h1>
+    <div class="animated-paragraph">
+        I treni in Italia sono abbastanza comodi e fortunatamente Benevento è ben collegata. Dai un'occhiata a 
+        <a href="https://www.trenitalia.com/" style="color: darkred;">Trenitalia</a> 
+        o <a href="https://www.italotreno.it/" style="color: darkred;">Italo</a>.
+    </div>
+
+    <h1 class="animated-header" style="margin-top: 5%;">In auto 🚗</h1>
+    <div class="animated-paragraph" style="margin-bottom: 10%;">
+        Dovrebbe essere <a href="https://googlethatforyou.com?q=go%20to%20benevento%20by%20car" style="color: darkred;">facile</a>!
+    </div>
+
+  </main>
+</div>
+
+<!-- Includere gli script necessari -->
+<script src="/js/sidebarToggle.js"></script>
+{{ end }}
